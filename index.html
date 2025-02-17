@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
             content="WebStudio - Effective Solutions for Your Business"
@@ -27,7 +28,7 @@
 
     <body>
         <header class="header">
-            <div class="container container-flex">
+            <div class="container header-container-flex">
                 <nav class="header-nav">
                     <a class="logo header-logo" href="./index.html"
                         >Web<span class="header-logo-accent">Studio</span></a
@@ -50,14 +51,14 @@
                 </nav>
                 <address class="header-address">
                     <ul class="header-address-list">
-                        <li class="header-address-item">
+                        <li class="mob-address-item">
                             <a
                                 class="header-address-link"
                                 href="mailto:info@devstudio.com"
                                 >info@devstudio.com</a
                             >
                         </li>
-                        <li class="header-address-item">
+                        <li class="mob-address-item">
                             <a
                                 class="header-address-link"
                                 href="tel:+110001111111"
@@ -66,6 +67,123 @@
                         </li>
                     </ul>
                 </address>
+                <button
+                    type="button"
+                    class="header-menu-btn"
+                    data-mob-menu-open
+                >
+                    <svg class="header-menu-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header-modal-menu" data-mob-menu>
+                <div class="mob-nav-wrapper">
+                    <button
+                        class="menu-close-btn"
+                        type="button"
+                        data-mob-menu-close
+                    >
+                        <svg class="menu-close-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="header-nav">
+                        <ul class="header-nav-menu mob-nav-menu">
+                            <li class="header-nav-item">
+                                <a
+                                    class="header-nav-link mob-nav-link current"
+                                    href="./index.html"
+                                    >Studio</a
+                                >
+                            </li>
+                            <li class="header-nav-item">
+                                <a class="header-nav-link mob-nav-link" href=""
+                                    >Portfolio</a
+                                >
+                            </li>
+                            <li class="header-nav-item">
+                                <a class="header-nav-link mob-nav-link" href=""
+                                    >Contacts</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mob-contact-wrapper">
+                    <address class="mob-menu-address">
+                        <ul class="mob-address-list">
+                            <li class="header-address-item">
+                                <a
+                                    class="header-address-link mob-address-link"
+                                    href="tel:+110001111111"
+                                    >+11 (000) 111-11-11</a
+                                >
+                            </li>
+                            <li class="header-address-item">
+                                <a
+                                    class="header-address-link mob-address-link"
+                                    href="mailto:info@devstudio.com"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="mob-soc-list">
+                        <li class="team-soc-item">
+                            <a href="" class="team-soc-link">
+                                <svg
+                                    class="team-soc-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-item">
+                            <a href="" class="team-soc-link">
+                                <svg
+                                    class="team-soc-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-item">
+                            <a href="" class="team-soc-link">
+                                <svg
+                                    class="team-soc-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-soc-item">
+                            <a href="" class="team-soc-link"
+                                ><svg
+                                    class="team-soc-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -84,7 +202,6 @@
             <section class="benefits section">
                 <div class="container">
                     <h2 class="visually-hidden">Benefits</h2>
-                    <!--  old 'section-title' -->
                     <ul class="benefits-list">
                         <li class="benefits-item">
                             <div class="benefits-container">
@@ -182,7 +299,7 @@
                 </div>
             </section>
 
-            <section class="team section">
+            <!-- <section class="team section">
                 <div class="container">
                     <h2 class="team-title section-title">Our Team</h2>
                     <ul class="team-list">
@@ -480,9 +597,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="portfolio section">
+            <!-- <section class="portfolio section">
                 <div class="container">
                     <h2 class="portfolio-title section-title">Our Portfolio</h2>
                     <ul class="portfolio-list">
@@ -490,7 +607,7 @@
                             <div class="portfolio-text-wrapper">
                                 <img
                                     class="portfolio-item-image"
-                                    src="./images/portf-1-min.jpg"
+                                    src="./images/portf-1.jpg"
                                     width="360"
                                     height="300"
                                     alt="BankApp picture"
@@ -517,7 +634,7 @@
                             <div class="portfolio-text-wrapper">
                                 <img
                                     class="portfolio-item-image"
-                                    src="./images/portf-2-min.jpg"
+                                    src="./images/portf-2.jpg"
                                     width="360"
                                     height="300"
                                     alt="Payment picture"
@@ -544,7 +661,7 @@
                             <div class="portfolio-text-wrapper">
                                 <img
                                     class="portfolio-item-image"
-                                    src="./images/portf-3-min.jpg"
+                                    src="./images/portf-3.jpg"
                                     width="360"
                                     height="300"
                                     alt="Meditation app picture"
@@ -571,7 +688,7 @@
                             <div class="portfolio-text-wrapper">
                                 <img
                                     class="portfolio-item-image"
-                                    src="./images/portf-4-min.jpg"
+                                    src="./images/portf-4.jpg"
                                     width="360"
                                     height="300"
                                     alt="Cab picture"
@@ -598,7 +715,7 @@
                             <div class="portfolio-text-wrapper">
                                 <img
                                     class="portfolio-item-image"
-                                    src="./images/portf-5-min.jpg"
+                                    src="./images/portf-5.jpg"
                                     width="360"
                                     height="300"
                                     alt="Screen picture"
@@ -625,7 +742,7 @@
                             <div class="portfolio-text-wrapper">
                                 <img
                                     class="portfolio-item-image"
-                                    src="./images/portf-6-min.jpg"
+                                    src="./images/portf-6.jpg"
                                     width="360"
                                     height="300"
                                     alt="Courses picture"
@@ -650,10 +767,10 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
         </main>
 
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container footer-container">
                 <div class="footer-main-wrapper">
                     <a class="logo" href="./index.html"
@@ -743,9 +860,9 @@
                     </form>
                 </div>
             </div>
-        </footer>
+        </footer> -->
+
         <div class="backdrop" data-modal>
-            <!-- is-open -->
             <div class="modal">
                 <button class="modal-close-btn" type="button" data-modal-close>
                     <svg class="modal-close-icon" width="8" height="8">
@@ -852,9 +969,11 @@
                                         href="./images/icons.svg#icon-check"
                                     ></use>
                                 </svg> </span
-                            >I accept the terms and conditions of the
-                            <a class="modal-label-link" href="">
-                                Privacy Policy</a
+                            ><span class="modal-check-text"
+                                >I accept the terms and conditions of the
+                                <a class="modal-label-link" href="">
+                                    Privacy Policy</a
+                                ></span
                             ></label
                         >
                     </div>
