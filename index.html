@@ -306,7 +306,10 @@
                         <li class="team-item">
                             <img
                                 class="team-item-image"
-                                srcset="./images/mark-2x-min.jpg 2x"
+                                srcset="
+                                    ./images/mark.jpg        1x,
+                                    ./images/mark-2x-min.jpg 2x
+                                "
                                 src="./images/mark.jpg"
                                 width="264"
                                 height="260"
@@ -380,7 +383,10 @@
                         <li class="team-item">
                             <img
                                 class="team-item-image"
-                                srcset="./images/tom-2x-min.jpg 2x"
+                                srcset="
+                                    ./images/tom.jpg        1x,
+                                    ./images/tom-2x-min.jpg 2x
+                                "
                                 src="./images/tom.jpg"
                                 width="264"
                                 height="260"
@@ -454,7 +460,10 @@
                         <li class="team-item">
                             <img
                                 class="team-item-image"
-                                srcset="./images/camila-2x-min.jpg"
+                                srcset="
+                                    ./images/camila.jpg        1x,
+                                    ./images/camila-2x-min.jpg 2x
+                                "
                                 src="./images/camila.jpg"
                                 width="264"
                                 height="260"
@@ -528,7 +537,10 @@
                         <li class="team-item">
                             <img
                                 class="team-item-image"
-                                srcset="./images/daniel-2x-min.jpg"
+                                srcset="
+                                    ./images/daniel.jpg        1x,
+                                    ./images/daniel-2x-min.jpg 2x
+                                "
                                 src="./images/daniel.jpg"
                                 width="264"
                                 height="260"
@@ -603,19 +615,43 @@
                 </div>
             </section>
 
-            <!-- <section class="portfolio section">
+            <section class="portfolio section">
                 <div class="container">
                     <h2 class="portfolio-title section-title">Our Portfolio</h2>
                     <ul class="portfolio-list">
                         <li class="portfolio-item">
                             <div class="portfolio-text-wrapper">
-                                <img
-                                    class="portfolio-item-image"
-                                    src="./images/portf-1.jpg"
-                                    width="360"
-                                    height="300"
-                                    alt="BankApp picture"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/portf-1.jpg        1x,
+                                            ./images/portf-1-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portf-1-tab-min.jpg    1x,
+                                            ./images/portf-1-tab-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portf-1-mob-min.jpg    1x,
+                                            ./images/portf-1-mob-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        class="portfolio-item-image"
+                                        srcset="./images/portf-1-2x-min.jpg 2x"
+                                        src="./images/portf-1.jpg"
+                                        width="100%"
+                                        alt="BankApp picture"
+                                    />
+                                </picture>
+
                                 <p class="portfolio-cover-text section-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -636,13 +672,36 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="portfolio-text-wrapper">
-                                <img
-                                    class="portfolio-item-image"
-                                    src="./images/portf-2.jpg"
-                                    width="360"
-                                    height="300"
-                                    alt="Payment picture"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/portf-2.jpg        1x,
+                                            ./images/portf-2-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portf-2-tab-min.jpg    1x,
+                                            ./images/portf-2-tab-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portf-2-mob-min.jpg    1x,
+                                            ./images/portf-2-mob-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        class="portfolio-item-image"
+                                        srcset="./images/portf-2-2x-min.jpg 2x"
+                                        src="./images/portf-2.jpg"
+                                        width="100%"
+                                        alt="Payment picture"
+                                    />
+                                </picture>
                                 <p class="portfolio-cover-text section-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -663,13 +722,37 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="portfolio-text-wrapper">
-                                <img
-                                    class="portfolio-item-image"
-                                    src="./images/portf-3.jpg"
-                                    width="360"
-                                    height="300"
-                                    alt="Meditation app picture"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/portf-3.jpg        1x,
+                                            ./images/portf-3-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portf-3-tab-min.jpg    1x,
+                                            ./images/portf-3-tab-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portf-3-mob-min.jpg    1x,
+                                            ./images/portf-3-mob-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        class="portfolio-item-image"
+                                        srcset="./images/portf-3-2x-min.jpg 2x"
+                                        src="./images/portf-3.jpg"
+                                        width="100%"
+                                        alt="Meditation app picture"
+                                    />
+                                </picture>
+
                                 <p class="portfolio-cover-text section-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -690,13 +773,37 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="portfolio-text-wrapper">
-                                <img
-                                    class="portfolio-item-image"
-                                    src="./images/portf-4.jpg"
-                                    width="360"
-                                    height="300"
-                                    alt="Cab picture"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/portf-4.jpg        1x,
+                                            ./images/portf-4-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portf-4-tab-min.jpg    1x,
+                                            ./images/portf-4-tab-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portf-4-mob-min.jpg    1x,
+                                            ./images/portf-4-mob-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        class="portfolio-item-image"
+                                        srcset="./images/portf-4-2x-min.jpg 2x"
+                                        src="./images/portf-4.jpg"
+                                        width="100%"
+                                        alt="Cab picture"
+                                    />
+                                </picture>
+
                                 <p class="portfolio-cover-text section-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -717,13 +824,36 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="portfolio-text-wrapper">
-                                <img
-                                    class="portfolio-item-image"
-                                    src="./images/portf-5.jpg"
-                                    width="360"
-                                    height="300"
-                                    alt="Screen picture"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/portf-5.jpg        1x,
+                                            ./images/portf-5-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portf-5-tab-min.jpg    1x,
+                                            ./images/portf-5-tab-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portf-5-mob-min.jpg    1x,
+                                            ./images/portf-5-mob-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        class="portfolio-item-image"
+                                        srcset="./images/portf-5-2x-min.jpg 2x"
+                                        src="./images/portf-5.jpg"
+                                        width="100%"
+                                        alt="Screen picture"
+                                    />
+                                </picture>
                                 <p class="portfolio-cover-text section-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -744,13 +874,36 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="portfolio-text-wrapper">
-                                <img
-                                    class="portfolio-item-image"
-                                    src="./images/portf-6.jpg"
-                                    width="360"
-                                    height="300"
-                                    alt="Courses picture"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/portf-6.jpg        1x,
+                                            ./images/portf-6-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portf-6-tab-min.jpg    1x,
+                                            ./images/portf-6-tab-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portf-6-mob-min.jpg    1x,
+                                            ./images/portf-6-mob-2x-min.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        class="portfolio-item-image"
+                                        srcset="./images/portf-6-2x-min.jpg 2x"
+                                        src="./images/portf-6.jpg"
+                                        width="100%"
+                                        alt="Courses picture"
+                                    />
+                                </picture>
                                 <p class="portfolio-cover-text section-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -771,10 +924,10 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
 
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container footer-container">
                 <div class="footer-main-wrapper">
                     <a class="logo" href="./index.html"
@@ -864,7 +1017,7 @@
                     </form>
                 </div>
             </div>
-        </footer> -->
+        </footer>
 
         <div class="backdrop" data-modal>
             <div class="modal">
